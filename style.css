@@ -1,0 +1,107 @@
+:root {
+  --primary-color: rgb(62, 155, 62);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  padding: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+  margin: auto;
+}
+
+#converter-img {
+  margin-bottom: 2rem;
+  width: 200px;
+}
+
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+select:focus,
+button:focus,
+input:focus {
+  outline: 0;
+}
+
+.btn {
+  cursor: pointer;
+  background: var(--primary-color);
+  color: #f1f1f1;
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  margin: 2rem 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.container select {
+  border-radius: 5px;
+  padding: 0.4rem 1.4rem 0.4rem 0.8rem;
+
+  appearance: none;
+  background: transparent;
+  background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%20000002%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-position: right 10px top 50%, 0, 0;
+  background-size: 12px auto, 100%;
+  background-repeat: no-repeat;
+}
+
+.container div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container input {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  text-align: right;
+  padding: 0.2rem 1rem;
+}
+
+.swap-rate-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rate {
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 300px;
+    padding: 0 2rem;
+  }
+}
